@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<title>Identity Input</title>
+	</head>
+	<body>
+	<h1>Identity</h1>
+		<form action="#" th:action="@{/identity}" th:object="${identity}" method="post">
+            <div><label> Name : <input type="text" th:field="*{name}"/> </label></div>
+            <div><label> Firstname: <input type="text" th:field="*{firstname}"/> </label></div>
+            <div><label> Birthdate: <input type="date" th:field="*{birthDate}"/> </label></div>
+            <div><label> Age: <input type="text" th:field="*{age}"/> </label></div>
+            <div><input type="submit" value="Submit"/></div>
+        </form>
+	</body>
+</html>
